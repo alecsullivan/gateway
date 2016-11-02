@@ -1,0 +1,20 @@
+# Common Properties
+
+# Application is 'gateway', running on port 8081
+# Cloud Config is currently disabled, all properties are served from yml files.
+
+# If not otherwise stated, the default profile is LOCAL
+
+server:
+  port: 8081
+spring:
+  application:
+    name: gateway
+  profiles:
+    active: local
+  cloud:
+    config:
+      enabled: false
+ribbon:
+  eureka:
+    enabled: true
